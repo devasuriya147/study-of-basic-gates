@@ -94,6 +94,6 @@ endmodule
 
 
 **Result:**
-Thus program run successfully excetued
+Thus the basic logic gates are studied and the truth tables are verified.
 
 
