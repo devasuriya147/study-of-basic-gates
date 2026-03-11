@@ -68,17 +68,18 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
 ```
  Developed by: DEVASURYA M
  RegisterNumber: 212225230048
-module experiment1(a,b,c1,c2,c3,c4,c5,c6,c7); 
-input a,b; 
-output c1,c2,c3,c4,c5,c6,c7; 
-not g1(c1,a); 
-and g2(c2,a,b); 
-or g3(c3,a,b); 
-nand g4(c4,a,b); 
-nor g5(c5,a,b); 
-xor g6(c6,a,b); 
-xnor g7(c7,a,b); 
+module exp1(a,b,f1,f2,f3,f4,f5,f6,f7);
+input a,b;
+output f1,f2,f3,f4,f5,f6,f7;
+assign f1=a|b;
+assign f2=a&b;
+assign f3=~a;
+assign f4=~f1;
+assign f5=~f2;
+assign f6=a^b;
+assign f7=~(f6);
 endmodule
+
 ```
  
 **Logic symbol & Truthtable**
@@ -86,11 +87,13 @@ endmodule
 
 
 **RTL realization Output:** 
-<img width="1702" height="905" alt="rtl out" src="https://github.com/user-attachments/assets/0cb1f8ec-f2ca-49ca-9d20-88c9bb53a1e9" />
+<img width="1128" height="648" alt="Screenshot 2026-03-11 202505" src="https://github.com/user-attachments/assets/400bffc4-26bc-4980-8a81-f6c5149f8c2f" />
+
 
 
 **RTL**
-<img width="1712" height="899" alt="waveform" src="https://github.com/user-attachments/assets/c376a635-133a-4fd7-922a-6cf74c1d53c3" />
+<img width="1604" height="457" alt="Screenshot 2026-03-11 202521" src="https://github.com/user-attachments/assets/7d542441-ad1d-41d2-af4d-f846c545ad64" />
+
 
 
 **Result:**
